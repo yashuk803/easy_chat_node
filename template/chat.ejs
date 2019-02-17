@@ -1,0 +1,37 @@
+<% layout('/layout/page') -%>
+<% block('title'); -%>
+
+<div class="container">
+    <header>
+        <h1 class="mt-5">Супер чат</h1>
+    </header>
+    <section class="mt-5 mb-5">
+        <p id="present"></p>
+        <div class="form-group" id="change_username">
+            <div class="form-row">
+                <div class="col-10">
+                    <input id="username" type="text" class="form-control"  placeholder="nick-name">
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-primary mb-2 vertical-align"  id="send_username" >Ваше имя</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="input_zone" style="display: none" class="mt-5">
+        <div class="form-row">
+            <div class="col-10">
+                <input type="text" class="form-control vertical-align" id="message" placeholder="Сообщение">
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-primary mb-2 vertical-align"  id="send_message" >Отправить</button>
+            </div>
+        </div>
+    </section>
+    <div class="">
+        <div class="" id="chatroom">
+            <section id="feedback"></section>
+        </div>
+    </div>
+</div>
+
